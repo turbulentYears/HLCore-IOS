@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'HLCore-IOS_Example', :exclusive => true do
+  pod 'HLCore-IOS', :path => '../'
+end
+
+target 'HLCore-IOS_Tests', :exclusive => true do
+  pod 'HLCore-IOS', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
